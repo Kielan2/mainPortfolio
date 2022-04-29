@@ -83,22 +83,25 @@ html {
 #tvScreen {
     height: 65rem;
     width: 120rem;
-    background-image: url(./loadingScreen.jpg);
     border: rgb(225, 229, 233) .8rem solid;
     border-radius: .7rem;
     border-style: ridge;
     margin: 0rem 20rem 0 0;
-    display: flex;
-    align-items:flex-end;
 }
 
-#tvScreen h3 {
+.tvImg {
+    background-image: url(/photo-1650554429435-c88d65fd6bcc.png);
+}
+
+#tvScreen h4 {
     font-size: large;
     font-weight: 500;
     display: flex;
     justify-content: right;
     padding: 1.5rem;
 }
+
+
 
 #aside {
     font-size: 5rem;
@@ -153,6 +156,11 @@ html {
     background-size: 100% 0.2em;
     background-position: 0 88%;
     transition: background-size 0.25s ease-in;
-    &:hover {
-      background-size: 100% 88%;
-    }
+}
+
+.visible {
+    visibility: visible;
+}
+.hidden {
+    visibility: hidden;
+}
