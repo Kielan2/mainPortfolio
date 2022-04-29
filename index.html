@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/147a98dc3d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/147a98dc3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,900&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>I'M WATCHING YOU</title>
-</head>
+  </head>
 
-<body>
-    
-    
+  <body>
     <h3 id="sideNote"></h3>
-    
+
     <div class="moveRight">
-
-        <nav id="nav">
-            <ul id="navUl">
-                <li class="drop">START GAME
-                    <ul class="drop-content">
-                        <li>SNAKE</li>
-                        <li>WORDLE</li>
-                    </ul>
-                </li>
-                <li class="drop">PROJECTS
-                    <ul class="drop-content">
-                        <li style="width: max-content;">API Project</li>
-                        <li style="width: max-content;">Max Movies</li>
-                    </ul>
-                </li>
-                <li class="drop">SKILLS
-                    <ul class="drop-content">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>SEO</li>
-                    </ul>
-                </li>
-                <li><a id="aboutLink">ABOUT ME</a></li>
-                <li><a href="./contact/index.html">CONTACT</a></li>
+      <nav id="nav">
+        <ul id="navUl">
+          <li class="drop">
+            START GAME
+            <ul class="drop-content">
+              <li>SNAKE</li>
+              <li>WORDLE</li>
             </ul>
-        </nav>
+          </li>
+          <li class="drop">
+            PROJECTS
+            <ul class="drop-content">
+              <li style="width: max-content">API Project</li>
+              <li style="width: max-content">Max Movies</li>
+            </ul>
+          </li>
+          <li class="drop">
+            SKILLS
+            <ul class="drop-content">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>SEO</li>
+              <li>Google</li>
+            </ul>
+          </li>
+          <li><a id="aboutLink" style="cursor: pointer">ABOUT ME</a></li>
+          <li><a id="contactLink" style="cursor: pointer">CONTACT</a></li>
+        </ul>
+      </nav>
 
-        <main id="tvScreen" class="tvImg">
-            <h4 class="loading">Loading...</h4>
-            <div class="tvAbout hidden">
-                <h2>About Me</h2>
-                <h3>100devs</h3>
-                <p>In January of 2022 I started 100devs bootcamp where I learned Full-stack Javascript with Leon Noel.</p>
-                <h3>SEO-Specialist</h3>
-                <p>In February of 2022 I started at Boostability where I improved SEO on small business' websites.</p>
-                <h3>Design-oriented</h3>
-                <p>I am very design-oriented and enjoy design and doing CSS!</p>
-                <h3>Basketball</h3>
-                <p>Grew up playing basketball and it is my favorite sport, I am a huge Boston Celtics fan.</p>
-                <h3>Snowboarding</h3>
-                <p>Grew up in Utah but just recently started Snowboarding and it is one of my favorite things to do.</p>
-                <h3>Video Games</h3>
-                <p>Playing video games has been a huge hobby of mine since I was a kid and enjoy a lot of different genre games.</p>
+      <main id="tvScreen">
+        <div class="circles">
+          <div class="circle"></div>
+          <div class="circleTwo"></div>
+          <div class="circleThree"></div>
+          <div class="circleFour"></div>
+          <div class="circleFive"></div>
+        </div>
+
+        <div class="tvAbout hidden">
+          <h2>About Me</h2>
+          <h3>100devs</h3>
+          <p>
+            In January of 2022 I started 100devs bootcamp where I learned
+            Full-stack Javascript with Leon Noel.
+          </p>
+          <h3>SEO-Specialist</h3>
+          <p>
+            In February of 2022 I started at Boostability where I improved SEO
+            on small business' websites.
+          </p>
+          <h3>Design-oriented</h3>
+          <p>I am very design-oriented and enjoy design and doing CSS!</p>
+          <h3>Basketball</h3>
+          <p>
+            Grew up playing basketball and it is my favorite sport, I am a huge
+            Boston Celtics fan.
+          </p>
+          <h3>Snowboarding</h3>
+          <p>
+            Grew up in Utah but just recently started Snowboarding and it is one
+            of my favorite things to do.
+          </p>
+          <h3>Video Games</h3>
+          <p>
+            Playing video games has been a huge hobby of mine since I was a kid
+            and enjoy a lot of different genre games.
+          </p>
+        </div>
+
+        <div class="tvContact hidden">
+          <h2>Get in touch</h2>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+              </div>
             </div>
-        </main>
+            <ul class="actions">
+              <li>
+                <a href="mailto:kielananderson@gmail.com" class="button submit"
+                  >Send Message</a
+                >
+              </li>
+            </ul>
+          </form>
+        </div>
+      </main>
     </div>
 
-
-
-
     <section id="stats">
-        <span id="connect">
-            <li><a href="https://github.com/Kielan2" target="blank" class="fa-brands fa-github"><span
-                        class="label"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/kielan-anderson/" target="blank"
-                    class="fa-brands fa-linkedin"><span class="label"></span></a></li>
+      <span id="connect">
+        <li>
+          <a
+            href="https://github.com/Kielan2"
+            target="blank"
+            class="fa-brands fa-github"
+            ><span class="label"></span
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/kielan-anderson/"
+            target="blank"
+            class="fa-brands fa-linkedin"
+            ><span class="label"></span
+          ></a>
+        </li>
+      </span>
+      <h1 class="underline--magical">KIELAN ANDERSON</h1>
+      <div>
+        <span style="color: #e34b24">
+          <i
+            class="fa-brands fa-html5 fa-2xl fa-primary-color: red;"
+            id="skilled"
+          ></i>
         </span>
-        <h1 class="underline--magical">KIELAN ANDERSON</h1>
-        <div>
-            <span style="color: #e34b24;">
-                <i class="fa-brands fa-html5 fa-2xl fa-primary-color: red;" id="skilled"></i>
-            </span>
-            <span style="color: #1f85c3;">
-                <i class="fa-brands fa-css3-alt fa-2xl" id="skilled"></i>
-            </span>
-        </div>
-        <p>hello..... welcome to my portfolio. I am a front-end developer. <br>Look at my portfolio -> be amazed ->
-            click contact link
-        </p>
-        <span style="color: #b17900;">
-            <i class="fa-brands fa-js fa-2xl" id="skilled"></i>
+        <span style="color: #1f85c3">
+          <i class="fa-brands fa-css3-alt fa-2xl" id="skilled"></i>
         </span>
+      </div>
+      <p>
+        hello..... welcome to my portfolio. I am a front-end developer.
+        <br />Look at my portfolio -> be amazed -> click contact link
+      </p>
+      <span style="color: #b17900">
+        <i class="fa-brands fa-js fa-2xl" id="skilled"></i>
+      </span>
     </section>
 
-
-
-    <div id="calendarGrid"></div>
-
-
-
-
-
-
-
-
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
